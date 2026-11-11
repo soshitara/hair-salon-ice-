@@ -614,15 +614,16 @@ footer .brand small {
   gap: 22px;
 }
 
+.social img {
+  width: 30px;
+  height: 30px;
+}
+
 .social a {
   text-decoration: none;
   font-family: Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 50;
   font-size: 13px;
-  border-radius: 9px;
-  background: #06c755;
-  padding: 12px 5px;
-  color: white;
 }
 
 .social a:last-child {
