@@ -486,6 +486,14 @@ h2, h3, h4, p, figure {
   flex-basis: 100%;
 }
 
+.menu dl > div:has(small) {
+  margin-bottom: 20px; /* （トリートメントカラー）の下の隙間の大きさ */
+}
+
+.menu dl > div.gap-after {
+  margin-bottom: 20px; /* 「マニキュア（メテオ）」の下の隙間の大きさ */
+}
+
 .length {
   font-size: 27px;
   line-height: 1.5;
