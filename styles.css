@@ -569,15 +569,12 @@ h2, h3, h4, p, figure {
 .access-grid h2 img {
   width: 55px;
   height: 55px;
-  background-color: #b89b6a;
-  -webkit-mask: url('assets/map-marker-svgrepo-com.svg') center / contain no-repeat;
-  mask: url('assets/map-marker-svgrepo-com.svg') center / contain no-repeat;
 }
 
 .exterior {
   max-width: 330px;
   aspect-ratio: 1.4;
-  object-fit: cover;
+  object-fit: cover;2
 }
 
 .access-info {
