@@ -88,7 +88,7 @@ nav a:hover {
 -------------------------------------**/
 .hero {
   height: 768px;
-  background: linear-gradient(90deg, #0005, #0001), url('assets/hero.svg') center/cover;
+  background: linear-gradient(90deg, #0005, #0001), url('assets/hero.png') center/cover;
   color: white;
   overflow: hidden;
 }
