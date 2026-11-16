@@ -1097,7 +1097,7 @@ section[id] {
 
   .menu-group h3 .menu-discount {
     display: inline;
-    font-size: 0.65em;  /* 20%OFFの文字サイズ */
+    font-size: 0.6em;  /* 20%OFFの文字サイズ */
     margin-left: 0.3em;
   }
 
