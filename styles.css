@@ -120,26 +120,34 @@ nav a:hover {
 
 .hero-slide:nth-child(2) {
   background-image: url("assets/hero02.png");
-  animation-delay: -12s;
+  animation-delay: -24s;
 }
 
 .hero-slide:nth-child(3) {
   background-image: url("assets/hero03.png");
-  animation-delay: -8s;
+  animation-delay: -16s;
 }
 
 .hero-slide:nth-child(4) {
   background-image: url("assets/hero04.png");
-  animation-delay: -4s;
+  animation-delay: -8s;
 }
 
-/* クロスフェード */
+/* クロスフェード：1.5秒 */
 @keyframes heroFade {
-  0%, 18.75% {
+  0% {
     opacity: 1;
   }
 
-  25%, 93.75% {
+  20.3125% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 0;
+  }
+
+  95.3125% {
     opacity: 0;
   }
 
