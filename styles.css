@@ -87,13 +87,80 @@ nav a:hover {
     ファーストビュー
 -------------------------------------**/
 .hero {
+  position: relative;
   height: 768px;
-  background: linear-gradient(90deg, #0005, #0001), url('assets/hero.png') center/cover;
   color: white;
   overflow: hidden;
+  isolation: isolate;
 }
 
+/* スライドショー全体 */
+.hero-slideshow {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+/* 各スライド */
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0;
+  animation: heroFade 16s linear infinite;
+}
+
+/* 画像と表示タイミング */
+.hero-slide:nth-child(1) {
+  background-image: url("assets/hero01.png");
+  animation-delay: 0s;
+}
+
+.hero-slide:nth-child(2) {
+  background-image: url("assets/hero02.png");
+  animation-delay: -12s;
+}
+
+.hero-slide:nth-child(3) {
+  background-image: url("assets/hero03.png");
+  animation-delay: -8s;
+}
+
+.hero-slide:nth-child(4) {
+  background-image: url("assets/hero04.png");
+  animation-delay: -4s;
+}
+
+/* クロスフェード */
+@keyframes heroFade {
+  0%, 18.75% {
+    opacity: 1;
+  }
+
+  25%, 93.75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* 文字の視認性を確保する暗いグラデーション */
+.hero-slideshow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #0005, #0001);
+  pointer-events: none;
+}
+
+/* 文字・ボタンは固定 */
 .hero-inner {
+  position: relative;
+  z-index: 1;
   max-width: 1152px;
   margin: auto;
   padding: 144px 0 70px;
