@@ -109,7 +109,7 @@ nav a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0;
-  animation: heroFade 16s linear infinite;
+  animation: heroFade 32s linear infinite;
 }
 
 /* 画像と表示タイミング */
@@ -665,7 +665,7 @@ h2, h3, h4, p, figure {
 .exterior {
   max-width: 330px;
   aspect-ratio: 1.4;
-  object-fit: cover;2
+  object-fit: cover;
 }
 
 .access-info {
